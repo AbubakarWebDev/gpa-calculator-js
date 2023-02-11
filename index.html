@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css" integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="main-heading">Welcome to Result Card Generator & GPA Calculator</h1>
+    <section class="container-md container-fluid text-center">
+        <h1>Privacy Policy</h1>
+        <p>We may collect personal identification information from Users in a variety of ways, including, but not
+            limited to, when
+            Users visit our site, fill out a form, and in connection with other activities,
+            services,
+            features or resources we make available on our Site. Users may be asked for, as appropriate, name, email
+            address. Users
+            may, however, visit our Site anonymously. We will collect personal identification information from Users
+            only if they
+            voluntarily submit such information to us. Users can always refuse to supply personally identification
+            information,
+            except that it may prevent them from engaging in certain Site related activities.We adopt appropriate data
+            collection, storage and processing practices and security measures to protect against
+            unauthorized access, alteration, disclosure or destruction of your personal information, username, password,
+            transaction
+            information and data stored on our Site.
+            Our Site is in compliance with PCI vulnerability standards in order to create as secure of an environment as
+            possible
+            for Users.
+        </p>
+        <h1>Requirement For Entering Input</h1>
+        <p>Your First Name, Last Name and Email will be Valid When it does not contains spaces and any other special
+            character in First and Last Name.<br> Your Obtained Marks Input must contains at least one character and at
+            max 3 characters
+            and otherwise your Input is Not Valid. <br> Your Two Marks Input must contains at least two character and at
+            max 3 characters
+            and otherwise your Input is Not Valid. <br> Obtained is must be Less Than or Equal to Total Marks Otherwise
+            Input is Not Valid. <br> Your Course Credits Hour Input must contains at least one
+            character and at max 2 characters
+            and otherwise your Input is Not Valid.</p>
+        <h1>Criteria For Calculating GPA</h1>
+        <p>Grade point average (GPA) is a commonly used indicator of an individual's academic achievement in school,
+            Collges and Universtities. It is the
+            average of the grades attained in each course, taking course credit into consideration. Grading systems vary
+            in
+            different countries, or even schools. This calculators use the following letter grades and their typical
+            corresponding numerical equivalents based on
+            grade points.</p>
+        <div class="w-sm-50 w-100 mx-sm-auto">
+            <table class="table table-bordered" align="center">
+                <thead class="thead-dark">
+                    <tr align="center">
+                        <th>Grade</th>
+                        <th>GPA</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr align="center">
+                        <td>A</td>
+                        <td>4</td>
+                        <td>85-100%</td>
+                    </tr>
+                    <tr align="center">
+                        <td>A -</td>
+                        <td>3.5</td>
+                        <td>80-84%</td>
+                    </tr>
+                    <tr align="center">
+                        <td>B</td>
+                        <td>3</td>
+                        <td>75-79%</td>
+                    </tr>
+                    <tr align="center">
+                        <td>B -</td>
+                        <td>2.5</td>
+                        <td>70-74%</td>
+                    </tr>
+                    <tr align="center">
+                        <td>C</td>
+                        <td>2</td>
+                        <td>65-69%</td>
+                    </tr>
+                    <tr align="center">
+                        <td>C -</td>
+                        <td>1.5</td>
+                        <td>60-64%</td>
+                    </tr>
+                    <tr align="center">
+                        <td>D</td>
+                        <td>1.0</td>
+                        <td>55-59%</td>
+                    </tr>
+                    <tr align="center">
+                        <td>D -</td>
+                        <td>0.5</td>
+                        <td>50-54%</td>
+                    </tr>
+                    <tr align="center">
+                        <td>F</td>
+                        <td>0</td>
+                        <td>0-49%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <form id="form" class="responsive font-weight-bolder shadow-lg my-5" onsubmit="" action="">
+        <div id="massage"></div>
+
+        <section>
+            <div class="m-3">
+                <span>First Name : </span>
+                <input id="fname" class="form-control" type="text" placeholder="Enter First Name" required>
+                <div class="invalid-feedback">Your Entered Input is not Valid. Please Check Input Requirements.</div>
+            </div>
+            <div class="m-3">
+                <span>Last Name : </span>
+                <input id="lname" class="form-control" type="text" placeholder="Enter Last Name" required>
+                <div class="invalid-feedback">Your Entered Input is not Valid. Please Check Input Requirements.</div>
+            </div>
+            <div class="m-3">
+                <span>Your Email : </span>
+                <input id="email" class="form-control" type="email" placeholder="Enter Your Email" required>
+                <div class="invalid-feedback">Your Entered Input is not Valid. Please Check Input Requirements.</div>
+            </div>
+        </section>
+
+        <section>
+            <div class="m-3">
+                <span>Calculus Marks : </span>
+                <input class="form-control" type="text" placeholder="Enter Obtained Marks" required>
+                <div class="invalid-feedback">Your Entered Input is not Valid. Please Check Input Requirements.</div>
+            </div>
+            <div class="m-3">
+                <input class="form-control" type="text" placeholder="Enter Total Marks" required>
+                <div class="invalid-feedback">Your Entered Input is not Valid. Please Check Input Requirements.</div>
+            </div>
+            <div class="m-3">
+                <input class="form-control" type="text" placeholder="Enter Course Credit Hours" required>
+                <div class="invalid-feedback">Your Entered Input is not Valid. Please Check Input Requirements.</div>
+            </div>
+        </section>
+
+        <section>
+            <div class="m-3">
+                <span>Introduction To Computing Marks : </span>
+                <input class="form-control" type="text" placeholder="Enter Obtained Marks" required>
+                <div class="invalid-feedback">Your Entered Input is not Valid. Please Check Input Requirements.</div>
+            </div>
+            <div class="m-3">
+                <input class="form-control" type="text" placeholder="Enter Total Marks" required>
+                <div class="invalid-feedback">Your Entered Input is not Valid. Please Check Input Requirements.</div>
+            </div>
+            <div class="m-3">
+                <input class="form-control" type="text" placeholder="Enter Course Credit Hours" required>
+                <div class="invalid-feedback">Your Entered Input is not Valid. Please Check Input Requirements.</div>
+            </div>
+        </section>
+
+        <section>
+            <div class="m-3">
+                <span>Programming Marks : </span>
+                <input class="form-control" type="text" placeholder="Enter Obtained Marks" required>
+                <div class="invalid-feedback">Your Entered Input is not Valid. Please Check Input Requirements.</div>
+            </div>
+            <div class="m-3">
+                <input class="form-control" type="text" placeholder="Enter Total Marks" required>
+                <div class="invalid-feedback">Your Entered Input is not Valid. Please Check Input Requirements.</div>
+            </div>
+            <div class="m-3">
+                <input class="form-control" type="text" placeholder="Enter Course Credit Hours" required>
+                <div class="invalid-feedback">Your Entered Input is not Valid. Please Check Input Requirements.</div>
+            </div>
+        </section>
+
+        <section>
+            <div class="m-3">
+                <span>Physics Marks : </span>
+                <input class="form-control" type="text" placeholder="Enter Obtained Marks" required>
+                <div class="invalid-feedback">Your Entered Input is not Valid. Please Check Input Requirements.</div>
+            </div>
+            <div class="m-3">
+                <input class="form-control" type="text" placeholder="Enter Total Marks" required>
+                <div class="invalid-feedback">Your Entered Input is not Valid. Please Check Input Requirements.</div>
+            </div>
+            <div class="m-3">
+                <input class="form-control" type="text" placeholder="Enter Course Credit Hours" required>
+                <div class="invalid-feedback">Your Entered Input is not Valid. Please Check Input Requirements.</div>
+            </div>
+        </section>
+
+        <section>
+            <div class="m-3">
+                <span>English Marks : </span>
+                <input class="form-control" type="text" placeholder="Enter Obtained Marks" required>
+                <div class="invalid-feedback">Your Entered Input is not Valid. Please Check Input Requirements.</div>
+            </div>
+            <div class="m-3">
+                <input class="form-control" type="text" placeholder="Enter Total Marks" required>
+                <div class="invalid-feedback">Your Entered Input is not Valid. Please Check Input Requirements.</div>
+            </div>
+            <div class="m-3">
+                <input class="form-control" type="text" placeholder="Enter Course Credit Hours" required>
+                <div class="invalid-feedback">Your Entered Input is not Valid. Please Check Input Requirements.</div>
+            </div>
+        </section>
+
+        <section class="m-3 text-center" id="btn-section">
+            <button class="btn btn-primary my-1" id="add" type="button">Add Another Subject</button>
+            <button class="btn btn-primary my-1" id="submit" type="submit">Submit Details</button>
+            <button class="btn btn-primary my-1" style="display: none;" id="del" type="button">Delete Selected
+                Subject</button>
+        </section>
+
+    </form>
+
+    <div id="table" style="display: none;">
+        <h1 id="name" class="text-center"></h1>
+        <h3 id="Email" class="text-center"></h3>
+
+        <div id="table" class="container-lg container-fluid table-responsive">
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Subjects</th>
+                        <th>Total Marks</th>
+                        <th>Obtained Marks</th>
+                        <th>Credit Hours</th>
+                        <th>Percentage</th>
+                        <th>Grade</th>
+                        <th>GPA</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

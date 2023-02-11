@@ -1,0 +1,66 @@
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+#main-heading {
+  text-align: center;
+  background-color: #1e5cce;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  color: #ffff;
+}
+
+.chkbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]+label:before {
+  content: "\f096";
+  font-family: FontAwesome;
+  font-size: 35px;
+  letter-spacing: 10px;
+  display: inline-block;
+}
+
+input[type=checkbox]:checked+label:before {
+  content: "\f046";
+}
+
+input[placeholder] {
+  border: none;
+  background-color: rgb(240, 232, 232);
+}
+
+input[placeholder]::placeholder {
+  color: #414141;
+}
+
+.responsive {
+  margin: 0px 25px;
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+}
+
+@media (min-width : 768px) {
+  .responsive {
+    width: 65%;
+    margin: auto;
+    padding: 20px 30px;
+  }
+}
+
+@media (min-width: 576px) {
+    .w-sm-50 {
+        width: 50% !important;
+    }
+}
